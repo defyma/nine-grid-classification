@@ -65,10 +65,10 @@ Class NineGridClassification {
             $valueY > $maxY ||
             $maxX <= 0 ||
             $maxY <= 0 ||
-            !is_numeric($valueX) ||
-            !is_numeric($valueY) ||
-            !is_numeric($maxX) ||
-            !is_numeric($maxY)
+            is_null($valueX) ||
+            is_null($valueY) ||
+            is_null($maxX) ||
+            is_null($maxY)
         ) return null;
 
         $_X = $maxX / 3;
