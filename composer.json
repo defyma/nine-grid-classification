@@ -1,0 +1,30 @@
+{
+    "name": "defyma/nine-grid-classification",
+    "description": "Implement 9 Grid Classification",
+    "keywords": ["9 Grid", "9 Box", "Talent"],
+    "homepage": "http://www.defyma.com/",
+    "type": "helper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Defy Ma",
+            "email": "defyma85@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/defyma/nine-grid-classification"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "defyma\\helper\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
