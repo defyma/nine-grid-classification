@@ -17,7 +17,7 @@ composer require defyma/nine-grid-classification
 
 ...
 $_9Grid = new \defyma\helper\NineGridClassification();
-$_9Grid->setPoint($X, $Y, $X, $X2, $Y1, $Y2);
+$_9Grid->setPoint($X, $Y, $X1, $X2, $Y1, $Y2);
 $classification = $_9Grid->calculate($scoreX, $scoreY);
 ...
 
