@@ -47,12 +47,16 @@ echo $classification; \\ 4
 
 ```
 
-# Params:
+# API:
 
-```$scoreX``` is score X | required
+```setPoin```
+- ```$X``` is Axis X | required
+- ```$Y``` is Axis Y | required
+- ```$X1``` is Point X1
+- ```$X2``` is Point X2
+- ```$Y1``` is Point Y1
+- ```$Y2``` is Point Y2
 
-```$scoreY``` is score Y | required
-
-```$maxX``` is range X Axis | optional | Default: 6
-
-```$maxY``` is range Y Axis | optional | Default: 6
+```calculate```
+- ```$scoreX``` is score Y | required
+- ```$scoreY``` is score Y | required
