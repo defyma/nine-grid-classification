@@ -16,7 +16,9 @@ composer require defyma/nine-grid-classification
 ```php
 
 ...
-$classification = \defyma\helper\NineGridClassification::calculate($scoreX, $scoreY, $maxX, $maxY);
+$_9Grid = new \defyma\helper\NineGridClassification();
+$_9Grid->setPoint($X, $Y, $X, $X2, $Y1, $Y2);
+$classification = $_9Grid->calculate($scoreX, $scoreY);
 ...
 
 ```
@@ -24,11 +26,23 @@ $classification = \defyma\helper\NineGridClassification::calculate($scoreX, $sco
 # Example:
 
 ```php
-
 ...
-$classification = \defyma\helper\NineGridClassification::calculate(1, 5, 6, 6);
+$_9Grid = new \defyma\helper\NineGridClassification();
+$_9Grid->setPoint(6,6);
+$classification = $_9Grid->calculate(1, 5);
 
 echo $classification; \\ 7
+...
+
+```
+
+```php
+...
+$_9Grid = new \defyma\helper\NineGridClassification();
+$_9Grid->setPoin(6,6,4,5,3,5);
+$classification = $_9Grid->calculate(1, 5);
+
+echo $classification; \\ 4
 ...
 
 ```
